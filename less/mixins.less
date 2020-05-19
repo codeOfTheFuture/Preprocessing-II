@@ -1,1 +1,22 @@
 // Mixins in here
+.btn-colors(@bg, @color, @btn-border) {
+  background-color: @bg;
+  color: @color;
+
+  &:hover {
+    background-color: @color;
+    color: @bg;
+    border: @btn-border;
+  }
+}
+
+.btn-spacing(@margin, @padding, @br) {
+  margin: @margin;
+  padding: @padding;
+  border-radius: @br;
+}
+
+.btn-text(@text-align, @font-size) {
+  text-align: @text-align;
+  font-size: @font-size;
+}
